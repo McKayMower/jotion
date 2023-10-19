@@ -12,14 +12,26 @@ const Heroes = ({}: Props) => {
             src={"/documents.png"}
             fill
             alt="documents"
-            className="object-contain"
+            className="object-contain dark:hidden"
+          />
+          <Image
+            src={"/documents-dark.png"}
+            fill
+            alt="documents"
+            className="object-contain hidden dark:block"
           />
         </div>
         <div className="relative h-[400px] w-[400px] hidden md:block">
           <Image
             src={"/reading.png"}
             fill
-            className="object-contain"
+            className="object-contain dark:hidden"
+            alt="reading"
+          />
+          <Image
+            src={"/reading-dark.png"}
+            fill
+            className="object-contain hidden dark:block"
             alt="reading"
           />
         </div>
