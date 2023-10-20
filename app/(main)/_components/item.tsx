@@ -27,7 +27,7 @@ import { toast } from "sonner";
 type Props = {
   label: string;
   icon: LucideIcon;
-  onClick: () => void;
+  onClick?: () => void;
 
   id?: Id<"documents">;
   documentIcon?: string;
