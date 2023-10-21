@@ -6,6 +6,7 @@ import { MenuIcon } from "lucide-react";
 import { useParams } from "next/navigation";
 import React from "react";
 import Title from "./title";
+import Banner from "./banner";
 
 type Props = {
   isCollapsed: boolean;
@@ -42,6 +43,9 @@ const Navbar = ({ isCollapsed, onResetWidth }: Props) => {
           <Title initialData={document} />
         </div>
       </nav>
+      {document.isArchived ? (
+        <Banner documentId={document._id} />
+      ) : null}
     </>
   );
 };
